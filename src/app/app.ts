@@ -17,7 +17,7 @@ dino.registerController(HomeController);
 dino.registerApplicationError(ApplicationErrorController);
 dino.requestEnd(JsonResponse);
 
-dino.dependencyInjectionResolver<Container>(AppContainer,
+dino.dependencyResolver<Container>(AppContainer,
     (injector, type) => {
         return injector.resolve(type);
     });

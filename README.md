@@ -1,5 +1,5 @@
 # dinoloop-inversify-starter
-Dinoloop starter project featuring Typescript, Express, Inversify, Moq.ts, Jasmine with TDD. This project uses Jasmine for unit-tests. You can choose other testing frameworks :)
+[Dinoloop](https://github.com/ParallelTask/dinoloop) starter project featuring Typescript, Express, Inversify, Moq.ts, Jasmine with TDD. This project uses Jasmine for unit-tests. You can choose other testing frameworks too :)
 
 ### Start WebServer
 git clone the project

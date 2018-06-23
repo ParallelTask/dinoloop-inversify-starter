@@ -3,7 +3,7 @@ import { ErrorController } from 'dinoloop';
 
 @injectable()
 export class ApplicationErrorController extends ErrorController {
-    write(): void {
+    internalServerError(): void {
         this.response.json({
             message: 'Internal server error 500!',
             errorMessage: this.error.message,

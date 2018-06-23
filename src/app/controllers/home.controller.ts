@@ -14,8 +14,13 @@ export class HomeController extends ApiController {
             this.name = 'HomeController';
     }
 
-    @HttpGet('/')
+    @HttpGet('/get')
     get(): string {
+        return 'Hello World!';
+    }
+
+    @HttpGet('/name')
+    getName(): string {
         return this.name;
     }
 
