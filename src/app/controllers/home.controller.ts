@@ -1,17 +1,15 @@
 import { injectable } from 'inversify';
-import { ApiController, Controller, HttpGet, SendsResponse, Async } from 'dinoloop';
+import { ApiController, Controller, HttpGet, SendsResponse, Async, BindNumber } from 'dinoloop';
 import { IAboutService } from '../services/iabout.service';
 import { About } from '../model/about.model';
-import { IAppConfigService } from '../services/config/iapp.config.service';
-
 @injectable()
 @Controller('/home')
 export class HomeController extends ApiController {
     name: string;
 
     constructor(private aboutService: IAboutService) {
-            super();
-            this.name = 'HomeController';
+        super();
+        this.name = 'HomeController';
     }
 
     @HttpGet('/get')
@@ -36,7 +34,7 @@ export class HomeController extends ApiController {
 
     @SendsResponse()
     @HttpGet('/about/:id')
-    getId(id: string): void {
+    getId(@BindNumber() id: number): void {
         setTimeout(() => {
             this.dino.proceed(`Value of id is ${id}`);
         }, 100);

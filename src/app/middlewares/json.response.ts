@@ -1,5 +1,5 @@
 import { injectable } from 'inversify';
-import { RequestStartMiddleware, RequestEndMiddleware } from 'dinoloop';
+import { RequestEndMiddleware } from 'dinoloop';
 import { Request, Response, NextFunction } from 'express';
 
 @injectable()
