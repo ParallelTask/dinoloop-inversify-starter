@@ -16,20 +16,21 @@
         "test": "jasmine-ts JASMINE_CONFIG_PATH=spec/support/jasmine.json"
     },
     "dependencies": {
-        "body-parser": "^1.18.2",
-        "dinoloop": "^2.1.0",
-        "express": "^4.16.3",
-        "inversify": "^4.13.0"
+        "body-parser": "~1.18.2",
+        "dinoloop": "~2.3.0",
+        "express": "~4.16.3",
+        "inversify": "~4.13.0",
+        "source-map-support": "~0.5.10"
     },
     "devDependencies": {
-        "@types/express": "^4.11.1",
-        "@types/jasmine": "^2.8.8",
+        "@types/express": "~4.11.1",
+        "@types/jasmine": "~3.3.9",
         "@types/node": "^7.0.22",
-        "jasmine-spec-reporter": "^4.2.1",
-        "jasmine-ts": "^0.2.1",
-        "moq.ts": "^2.6.1",
-        "rimraf": "^2.5.2",
-        "typescript": "~2.4.2"
+        "jasmine-spec-reporter": "~4.2.1",
+        "jasmine-ts": "~0.2.1",
+        "moq.ts": "~2.6.1",
+        "rimraf": "~2.5.2",
+        "typescript": "~2.8.1"
     },
     "engines": {
         "node": ">= 8.10.x",

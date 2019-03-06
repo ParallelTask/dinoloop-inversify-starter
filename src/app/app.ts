@@ -1,3 +1,5 @@
+// tslint:disable-next-line: no-require-imports no-var-requires
+require('source-map-support').install();
 import express = require('express');
 import bodyParser = require('body-parser');
 import { Container } from 'inversify';
